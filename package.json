@@ -1,0 +1,31 @@
+{
+  "name": "desafio-dot",
+  "version": "1.0.0",
+  "description": "Desafio-dot",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipebetini/desafio-dot.git"
+  },
+  "keywords": [
+    "[\"text\"",
+    "\"gulp\"",
+    "\"sass\"]"
+  ],
+  "author": "\"Felipe Betini\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipebetini/desafio-dot/issues"
+  },
+  "homepage": "https://github.com/Felipebetini/desafio-dot#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
