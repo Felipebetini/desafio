@@ -56,7 +56,7 @@ html {
 }
 
 .imgP {
-  padding:0;
+  padding: 0;
 }
 
 .slider {
@@ -92,14 +92,12 @@ html {
 .divImgRound {
   width: 100%;
 }
- .imgSlider {
-    height: 200px;
-    
-    width: 100%;
-    border: solid gray;
-  }
+.imgSlider {
+  height: 200px;
 
-  
+  width: 50%;
+  border: solid gray;
+}
 
 .roundImg {
   border-radius: 50%;
@@ -276,8 +274,10 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 }
 
 .textarea {
-  height: 200px;
   width: 100%;
+  height: 150px;
+  outline: none;
+  resize: none;
 }
 
 .sendButton {
@@ -286,9 +286,10 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   background-color: white;
   border-radius: 7px;
   font: message-box;
+  margin: 20px;
 }
 
-.footer{
+.footer {
   padding: 20px;
   text-align: center;
   text-align: center;
@@ -298,8 +299,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   color: white;
   font-size: x-large;
 }
-
-
 
 /*Responsividade*/
 @media screen and (min-width: 700px) {
@@ -477,7 +476,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   #section5 {
     top: 0;
     left: 0;
-    height: 50%;
+    height: auto;
     width: 100%;
     display: block;
     text-align: center;
@@ -538,10 +537,20 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
     width: 80%;
     margin-top: 50px;
   }
+  .divTextarea {
+    display: inline-block;
+    padding: 3px;
+    background-color: #a7a6a6;
 
-  .textarea {
-    height: 200px;
+    border-radius: 7px;
+    font: message-box;
     width: 80%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .textarea {
+    width: 100%;
+    height: 153px;
   }
 
   .sendButton {
@@ -550,6 +559,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
     background-color: white;
     border-radius: 7px;
     font: message-box;
+    margin: 20px;
   }
 
   .footer {
@@ -559,27 +569,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
     background-color: #333333;
     color: white;
     font-size: xx-large;
-  }
-}
-
-@media screen and (max-width: 1605px) {
-  .insideImg2 {
-    display: none;
-  }
-  .divImgRound {
-    width: 100%;
-    text-align: center;
-  }
-  .imgRoundText {
-    text-align: center;
-  }
-  .imgRoundP {
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  #section5 {
-    background-image: -webkit-linear-gradient(107deg, #2b2b2b 56%, #6f6f6f 50%);
-    height: auto;
   }
 }
 
@@ -605,87 +594,27 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 }
 
 @media screen and (max-width: 1650px) {
-  .imgRoundh1{
+  .imgRoundh1 {
     text-align: center;
   }
-  }
 }
-
-@media screen and (max-width: 550px) {
-  .head {
-    padding: 0;
-    font-size: x-large;
-  }
-
-  .imgSlider {
-    height: 200px;
-    width: 200px;
-  }
-
-  .section2 {
-    width: 100%;
-    height: 60%;
-  }
-  .img2,
-  .img3 {
+@media screen and (max-width: 1605px) {
+  .insideImg2 {
     display: none;
   }
-  .slider {
+  .divImgRound {
     width: 100%;
-  }
-  .section4 {
-    height: auto;
-  }
-  input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
-    height: 365px;
-  }
-  input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
-    height: 340px;
-  }
-  .imgAccordion {
-    width: 280px;
-    height: 200px;
-
-    border: solid 10px gray;
-  }
-  .pAccordion {
-    color: black;
-    padding: 0%;
-  }
-  .accordion {
-    padding: 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
-  input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
+  .imgRoundText {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .pAccordion {
-    color: black;
-  }
-  .accordion {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .imgRoundP {
+    padding-bottom: 40px;
     text-align: center;
-  }
-  .imgAccordion {
-    width: 280px;
-    height: 200px;
-
-    border: solid 10px gray;
-  }
-  .section4 {
-    height: auto;
-    background-color: rgb(182, 175, 175);
   }
   #section5 {
-    background-image: -webkit-linear-gradient(146deg, #2b2b2b 50%, #6f6f6f 50%);
+    background-image: -webkit-linear-gradient(107deg, #2b2b2b 56%, #6f6f6f 50%);
     height: auto;
   }
 }
@@ -748,6 +677,12 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .insideImg3 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   #section5 {
     background-image: -webkit-linear-gradient(
@@ -767,7 +702,31 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
     );
   }
 }
+@media screen and (max-width: 800px) {
+  .pAccordion {
+    color: black;
+  }
+  .accordion {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .imgAccordion {
+    width: 280px;
+    height: 200px;
 
+    border: solid 10px gray;
+  }
+  .section4 {
+    height: auto;
+    background-color: rgb(182, 175, 175);
+  }
+  #section5 {
+    background-image: -webkit-linear-gradient(146deg, #2b2b2b 50%, #6f6f6f 50%);
+    height: auto;
+  }
+}
 @media screen and (max-width: 764px) {
   #section5 {
     background-image: -webkit-linear-gradient(
@@ -815,6 +774,58 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
       #2b2b2b 50%,
       #6f6f6f 50%
     );
+  }
+}
+@media screen and (max-width: 550px) {
+  .head {
+    padding: 0;
+    font-size: x-large;
+  }
+
+  .imgSlider {
+    height: 200px;
+    width: 200px;
+  }
+
+  .section2 {
+    width: 100%;
+    height: 60%;
+  }
+  .img2,
+  .img3 {
+    display: none;
+  }
+  .slider {
+    width: 100%;
+  }
+  .section4 {
+    height: auto;
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
+    height: 365px;
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
+    height: 340px;
+  }
+  .imgAccordion {
+    width: 280px;
+    height: 200px;
+
+    border: solid 10px gray;
+  }
+  .pAccordion {
+    color: black;
+    padding: 0%;
+  }
+  .accordion {
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
+    text-align: center;
   }
 }
 
