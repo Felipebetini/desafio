@@ -20,5 +20,5 @@ gulp.task("workflow", function () {
     .pipe(gulp.dest("./dist/css/"));
 });
 gulp.task("default", function () {
-  gulp.watch("./src/sass/**/*.scss", ["workflow"]);
+  gulp.watch("./src/sass/**/*.scss", gulp.series["workflow"]);
 });
