@@ -484,7 +484,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   .imgRoundh1 {
     margin-bottom: 20px;
   }
-  . .imgRoundText {
+  .imgRoundText {
     text-align: left;
   }
   /*
@@ -602,7 +602,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 
   .inputMidle {
     display: inline;
-    width: 741px;
     margin-left: auto;
     margin-right: auto;
   }
