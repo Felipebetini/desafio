@@ -6,13 +6,13 @@ function handleRadio() {
   let w3 = document.getElementById("radio-3");
   if (w1.checked) {
     document.getElementById("section1").style.backgroundImage =
-      "url(../img/montain1.jpg)";
+      "url(./img/montain1.jpg)";
   } else if (w2.checked) {
     document.getElementById("section1").style.backgroundImage =
-      "url(../img/montain2.jpg)";
+      "url(./img/montain2.jpg)";
   } else if (w3.checked) {
     document.getElementById("section1").style.backgroundImage =
-      "url(../img/montain3.jpg)";
+      "url(./img/montain3.jpg)";
   }
 }
 
